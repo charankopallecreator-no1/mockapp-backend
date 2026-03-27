@@ -1,0 +1,76 @@
+.dashboard {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard header h1 {
+  margin: 0;
+}
+
+.progress-section, .tests-section {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.progress-section h2, .tests-section h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.subject-progress, .test-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.subject-progress h3, .test-card h3 {
+  margin-top: 0;
+  color: #555;
+}
+
+.test-card button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.test-card button:hover {
+  background-color: #218838;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 10px;
+  }
+
+  .dashboard header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .progress-section, .tests-section {
+    padding: 15px;
+  }
+
+  .subject-progress, .test-card {
+    padding: 10px;
+  }
+}
